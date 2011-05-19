@@ -9,5 +9,6 @@
 *.pyc
 *.pyo
 
-# specific directories to ignore
+# specific files to ignore
 .partyhouse-venv
+settings_local.py

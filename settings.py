@@ -143,3 +143,19 @@ LOGGING = {
         },
     }
 }
+
+try:
+   from settings_local import *
+except ImportError:
+   import sys
+   sys.stderr.write('Unable to read settings_local.py\n')
+
+try:
+   INSTALLED_APPS += ADDITIONAL_APPS
+except NameError:
+   pass
+
+try:
+   MIDDLEWARE_CLASSES += ADDITIONAL_MIDDLEWARE
+except NameError:
+   pass
