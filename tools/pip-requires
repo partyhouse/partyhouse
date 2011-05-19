@@ -1,1 +1,2 @@
 Django
+django-social-auth==0.3.15
